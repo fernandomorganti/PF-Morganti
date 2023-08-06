@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style2.css">
+    <script src="../scripts/app.js" async></script>
+    <title>Productos personalizados</title>
+</head>
+<body>
+    <!-- contenedor padre -->
+    <section class="contenedor_principal">
+        <!-- encabezado -->
+        <header>
+            <div id="logo"><img src="../assets/images/logo.png" alt="aqui va logo"></div>
+        </header>
+        <!-- botonera principal -->
+        <nav>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../index.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="./servicio.html">SERVICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./venta.html">VENTA</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="./galeria.html">GALERIA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./contacto.html">CONTACTO</a>
+                </li>
+              </ul>
+        </nav>
+        <!-- principal -->
+        <main>
+            <section class="contenedor">
+                <!-- Contenedor de elementos -->
+                <div class="contenedor-items">
+                    <div class="item">
+                        <span class="titulo-item">LLAVERO MADERA</span>
+                        <img src="../assets/images/ventas/llavero-madera.jpg" alt="" class="img-item">
+                        <span class="precio-item">$350</span>
+                        <button class="boton-item">Agregar al Carrito</button>
+                    </div>
+                    <div class="item">
+                        <span class="titulo-item">LLAVERO ACRILICO</span>
+                        <img src="../assets/images/ventas/llavero-acrilico.jpg" alt="" class="img-item">
+                        <span class="precio-item">$450</span>
+                        <button class="boton-item">Agregar al Carrito</button>
+                    </div>
+                    <div class="item">
+                        <span class="titulo-item">LLAVERO CUERO</span>
+                        <img src="../assets/images/ventas/llavero-cuero.jpg" alt="" class="img-item">
+                        <span class="precio-item">$600</span>
+                        <button class="boton-item">Agregar al Carrito</button>
+                    </div>
+                    <div class="item">
+                        <span class="titulo-item">BOLIGRAFOS</span>
+                        <img src="../assets/images/ventas/lapiceras.jpg" alt="" class="img-item">
+                        <span class="precio-item">$2.500</span>
+                        <button class="boton-item">Agregar al Carrito</button>
+                    </div>
+                    <div class="item">
+                        <span class="titulo-item">CUCHILLO ARTESANAL</span>
+                        <img src="../assets/images/ventas/cuchillo.jpg" alt="" class="img-item">
+                        <span class="precio-item">$5.500</span>
+                        <button class="boton-item">Agregar al Carrito</button>
+                    </div>
+                    <div class="item">
+                        <span class="titulo-item">PLATO + CUBIERTOS</span>
+                        <img src="../assets/images/ventas/asado.jpg" alt="" class="img-item">
+                        <span class="precio-item">$6.300</span>
+                        <button class="boton-item">Agregar al Carrito</button>
+                    </div>
+                    <div class="item">
+                        <span class="titulo-item">PLATO MADERA</span>
+                        <img src="../assets/images/ventas/plato.jpg" alt="" class="img-item">
+                        <span class="precio-item">$2.800</span>
+                        <button class="boton-item">Agregar al Carrito</button>
+                    </div>
+                    <div class="item">
+                        <span class="titulo-item">MATE VIROLA</span>
+                        <img src="../assets/images/ventas/mate1.jpg" alt="" class="img-item">
+                        <span class="precio-item">$7.800</span>
+                        <button class="boton-item">Agregar al Carrito</button>
+                    </div>
+                    <div class="item">
+                        <span class="titulo-item">MATE ALGARROBO</span>
+                        <img src="../assets/images/ventas/mate2.jpg" alt="" class="img-item">
+                        <span class="precio-item">$2.800</span>
+                        <button class="boton-item">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <!-- Carrito de Compras -->
+                <div class="carrito" id="carrito">
+                    <div class="header-carrito">
+                        <h2>Tu Carrito</h2>
+                    </div>
+        
+                    <div class="carrito-items">
+
+                        
+                        <!-- <div class="carrito-item">
+                            <img src="../assets/images/ventas/boxengasse.png" width="80px" alt="">
+                            <div class="carrito-item-detalles">
+                                <span class="carrito-item-titulo">Box Engasse</span>
+                                <div class="selector-cantidad">
+                                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                                    <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                                    <i class="fa-solid fa-plus sumar-cantidad"></i>
+                                </div>
+                                <span class="carrito-item-precio">$15.000,00</span>
+                            </div>
+                           <span class="btn-eliminar">
+                                <i class="fa-solid fa-trash"></i>
+                           </span>
+                        </div>
+                        <div class="carrito-item">
+                            <img src="../assets/images/ventas/skinglam.png" width="80px" alt="">
+                            <div class="carrito-item-detalles">
+                                <span class="carrito-item-titulo">Skin Glam</span>
+                                <div class="selector-cantidad">
+                                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                                    <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                                    <i class="fa-solid fa-plus sumar-cantidad"></i>
+                                </div>
+                                <span class="carrito-item-precio">$18.000,00</span>
+                            </div>
+                           <button class="btn-eliminar">
+                                <i class="fa-solid fa-trash"></i>
+                           </button>
+                        </div> -->
+
+                        
+                    </div>
+                    <div class="carrito-total">
+                        <div class="fila">
+                            <strong>Tu Total</strong>
+                            <span class="carrito-precio-total">
+                                $120.000,00
+                            </span>
+                        </div>
+                        <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- pie de pagina -->
+        <footer>
+            <div class="comentarioPie">
+                <p>Mendoza. Argentina. Todos los derechos reservados.</p>
+            </div>
+            <div class="contenedor_botones">
+            <a href="https://wa.me/542616142882?text=Hola!%20Soy%20Fernando.%20En%20que%20te%20puedo%20ayudar? Haz%20clic%20en%20ir%20al%20chat%20para%20comunicarte%20conmigo" target="_blank"><img src="../assets/images/footer/logo_whatsapp_white.png"></a>
+            <a href="https://www.instagram.com/lasergraf_mendoza" target="_blank"><img src="../assets/images/footer/logo_instagram_white.png"></a>
+            <a href="https://www.facebook.com/grabadoslasergraf" target="_blank"><img src="../assets/images/footer/logo_facebook_white.png"></a>
+        </div>
+        </footer>
+    </section>
+</body>
+</html>
