@@ -1,16 +1,18 @@
 main{
     grid-area: main;
     justify-content: center;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     .fotos {
         display: flex;
+        max-width: 100%;
         width: 400px;
         height: 350px;
         justify-content: center;
         margin: 50px;
         object-fit: cover;
         img{
+            max-width: 100%;
             width: 30px;
             flex-grow: 1;
             object-fit: cover;

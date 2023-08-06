@@ -2,7 +2,7 @@ footer {
     grid-area: footer;
     background-color: red;
     display: flex;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     .comentarioPie {
         color: white;
@@ -33,41 +33,4 @@ footer {
             }
         }
     } 
-}
-
-
- /* SECCION RESPONSIVE */
- @media screen and (max-width: 850px) {
-    .contenedor {
-      display: block;
-    }
-    .contenedor-items{
-        width: 100% !important;
-    }
-    .carrito{
-        width: 100%;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .fotos {
-        display: flex;
-        width: 300px;
-        height: 150px;
-        justify-content: center;
-        margin: 50px;
-        img{
-            width: 20px;
-            flex-grow: 1;
-            object-fit: cover;
-            opacity: 0.8;
-            transition: 0.5s ease;
-        }
-        img:hover {
-            cursor: crosshair;
-            width: 200px;
-            opacity: 1;
-            filter: contrast(120%);
-        }
-    }
 }

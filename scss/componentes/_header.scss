@@ -2,7 +2,7 @@ header {
     grid-area: header;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(129,55,55,1) 13%, rgba(66,65,65,1) 29%, rgba(0,0,0,1) 50%, rgba(66,65,65,1) 69%, rgba(129,55,55,1) 87%, rgba(0,0,0,1) 100%);
-    width: 100%;
+    max-width: 100%;
     height: auto;
     justify-content: center;
     #logo{

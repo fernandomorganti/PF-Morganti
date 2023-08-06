@@ -1,7 +1,7 @@
 main {
   grid-area: main;
   display: flex;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   .contact_form {
     width: 800px; 
@@ -13,17 +13,12 @@ main {
     background-color: #fbfbfb; 
     padding-left: 30px;
     .formulario {
-      h2{
+      h3{
         font-size: 2rem;
         font-family: 'Times New Roman', Times, serif;  
         text-align: letf; 
         padding-bottom: 20px; 
         color: gray;
-      }
-      h3{
-        font-size: 16px; 
-        padding-bottom: 30px;
-        color: #0e0e0e;   
       }
       p{
         font-size: 14px; 
