@@ -1,4 +1,119 @@
-@media (max-width:570px) and (orientation:portrait){
+@media (min-width: 700px) and (max-width: 1024px){
+    main{
+        display: inline-block;
+        aside {
+            grid-area: aside;
+            width: 100%;
+            text-align: center;
+            .imagenHome {
+                img {
+                    width: 220px;
+                    height:220px;
+                    margin-left: none;
+                    margin-top: none;
+                    
+                }
+            }
+        }
+        section {
+            grid-area: section;
+            width: 100%;
+            text-align: center;
+            #texto {
+                color: white;
+                font-size: 1rem;
+                margin-inline: 20px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        }
+    }
+    main .servicio {
+        display: inline-block;
+        width: 100%;
+        section {
+          width: 100%;
+          text-align: center;
+          margin-top: 40px;
+          img {
+            width: 150px;
+            height: 150px;
+            border-radius: 150px;
+            border: 5px solid #a7a1a1;
+        }
+          p {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 180%;
+            font-size: 1rem;
+            margin-inline: 35px;
+        }
+    }
+}
+main{
+    height: 100%;
+
+    .fotos {
+        flex-direction: column;
+        object-fit: cover;
+        height: auto;
+        img{
+            width: 50px;
+            height: 50PX;
+            flex-grow: 1;
+            margin-top: -25px;
+            
+        }
+        img:hover {
+            width: 260px;
+            height: 260px;
+        }
+    }
+}
+main{
+    display: inline-block;
+    width: 100%;
+    .mapa {
+        width: 100%;
+        height: auto;
+        background-color: black;
+        text-align: center;
+        img{
+          width: 200px;
+          height: 200px;
+          margin: 30px;
+          border: 2px solid #4b4545;
+          border-radius: 350px;
+        }
+        p{
+          font-size: 1rem;
+          color: white;
+        }
+    }
+    .contact_form {
+        width: 350px;
+        .formulario p{
+            input{
+                background-color: #fbfbfb; 
+                width: 270px; 
+                height: 40px; 
+
+              }
+              textarea{
+                background-color: #fbfbfb; 
+                width: 270px; 
+                height: 100px; 
+            }
+        }
+        .formulario button{	
+            width: 100px;   
+
+        }
+    
+    }
+}
+
+}
+@media (min-width: 320px) and (max-width: 500px){
         main{
             display: inline-block;
             aside {
