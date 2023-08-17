@@ -1,23 +1,20 @@
 main{
     grid-area: main;
     justify-content: center;
-    max-width: 100%;
     height: auto;
     .fotos {
         display: flex;
-        max-width: 100%;
-        width: 400px;
-        height: 350px;
+        width: 450px;
+        height: 400px;
         justify-content: center;
         margin: 50px;
         object-fit: cover;
         img{
-            max-width: 100%;
-            width: 30px;
+            width: 50px;
             flex-grow: 1;
             object-fit: cover;
             opacity: 0.8;
-            transition: 0.5s ease;
+            transition: 0.7s ease;
         }
         img:hover {
             cursor: crosshair;

@@ -4,14 +4,14 @@ main {
   max-width: 100%;
   height: auto;
   .contact_form {
-    width: 800px; 
+    width: 600px; 
     height: auto;
     margin: 30px auto;
     border-radius: 10px;  
     padding-top: 30px;
     padding-bottom: 20px;  
     background-color: #fbfbfb; 
-    padding-left: 30px;
+    
     .formulario {
       h3{
         font-size: 2rem;
@@ -21,7 +21,7 @@ main {
         color: gray;
       }
       p{
-        font-size: 14px; 
+        font-size: 1rem; 
         color: #0e0e0e;
         label{
           display: block; 
@@ -67,7 +67,7 @@ main {
         border-color: #e7e7e7; 
         border-style: solid; 
         border-radius: 10px;	
-        width: 420px;   
+        width: 100px;   
         cursor: pointer;
         p{
           color: #fff; 
@@ -96,7 +96,7 @@ main {
   .mapa {
     width: 30%;
     height: 100%;
-    background-color: rgb(177, 169, 169);
+    background-color: rgb(32, 32, 32);
     text-align: center;
     img{
       width: 200px;
@@ -104,6 +104,11 @@ main {
       margin: 50px;
       border: 2px solid #4b4545;
       border-radius: 350px;
+    }
+    p{
+      font-size: 1rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
     }
   }
 }
