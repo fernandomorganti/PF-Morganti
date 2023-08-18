@@ -24,7 +24,7 @@ header {
 
 nav {
   grid-area: nav;
-  display: flex;
+  display: block;
   background-color: #494949;
   width: 100%;
   height: 45px;
@@ -34,7 +34,7 @@ nav {
 
 main {
   display: flex;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   background-color: black; }
   main aside {
@@ -68,15 +68,26 @@ main {
 
 main {
   grid-area: main;
-  max-width: 100%;
-  height: auto;
-  background-color: black; }
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: block; }
+  main .titulo-servicios {
+    width: 100%;
+    position: absolute; }
+    main .titulo-servicios H2 {
+      font-family: 'Times New Roman', Times, serif;
+      color: gray;
+      margin-top: 30px;
+      font-size: 2rem;
+      width: 100%; }
   main .servicio {
     display: flex;
-    width: 100%; }
+    width: 100%;
+    margin-top: 100px; }
     main .servicio section {
       width: 25%;
-      margin-top: 40px; }
+      text-align: center; }
       main .servicio section img {
         width: 200px;
         height: 200px;
@@ -86,7 +97,7 @@ main {
         color: white;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         line-height: 180%;
-        font-size: 1rem;
+        font-size: 1.1rem;
         padding: 10px;
         margin-inline: 35px; }
 
@@ -96,6 +107,15 @@ main {
   height: auto;
   background-color: black;
   text-align: center; }
+  main .ventas {
+    width: 100%;
+    position: absolute; }
+    main .ventas H3 {
+      font-family: 'Times New Roman', Times, serif;
+      color: gray;
+      margin-top: 30px;
+      font-size: 2rem;
+      width: 100%; }
   main .contenedor {
     max-width: 1200px;
     padding: 10px;
@@ -104,6 +124,7 @@ main {
     justify-content: space-between;
     /* oculto lo que queda fuera del .contenedor */
     contain: paint;
+    margin-top: 60px;
     /* seccion carrito */ }
     main .contenedor .contenedor-items {
       margin-top: 30px;
@@ -261,15 +282,24 @@ main {
 
 main {
   grid-area: main;
-  justify-content: center;
-  height: auto; }
+  text-align: center;
+  height: auto;
+  display: block; }
+  main H4 {
+    font-family: 'Times New Roman', Times, serif;
+    color: gray;
+    margin-top: 20px;
+    font-size: 2rem;
+    width: 100%;
+    position: absolute; }
   main .fotos {
+    width: 100%;
     display: flex;
     width: 450px;
     height: 400px;
-    justify-content: center;
     margin: 50px;
-    object-fit: cover; }
+    margin-top: 80px;
+    margin-left: 120px; }
     main .fotos img {
       width: 50px;
       flex-grow: 1;
@@ -285,7 +315,7 @@ main {
 main {
   grid-area: main;
   display: flex;
-  max-width: 100%;
+  width: 100%;
   height: auto; }
   main .contact_form {
     width: 600px;
@@ -370,21 +400,20 @@ main {
       height: 200px;
       margin: 50px;
       border: 2px solid #4b4545;
-      border-radius: 350px; }
+      border-radius: 200px; }
     main .mapa p {
       font-size: 1rem;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: white; }
 
 .contenedor-respuesta {
-  max-width: 100%;
+  display: grid;
+  width: 100%;
   height: 100vh;
   background-color: gray;
-  align-items: center;
-  justify-content: center; }
+  place-items: center; }
   .contenedor-respuesta .respuesta {
-    margin: 0;
-    justify-content: center; }
+    margin: auto; }
     .contenedor-respuesta .respuesta h6 {
       font-size: 2rem;
       color: #353434;
@@ -394,16 +423,13 @@ main {
       color: white;
       font-size: 1.5rem;
       padding: 40px;
-      margin-inline: 100px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 220%;
       text-align: center; }
   .contenedor-respuesta #volver {
-    justify-content: center;
-    text-align: center; }
+    align-items: start; }
     .contenedor-respuesta #volver img {
-      width: 40px;
-      height: 40px; }
+      width: 60px;
+      height: 60px; }
 
 footer {
   grid-area: footer;
@@ -439,167 +465,99 @@ footer {
 
 @media (min-width: 700px) and (max-width: 1024px) {
   main {
-    display: inline-block; }
+    display: block; }
     main aside {
-      grid-area: aside;
-      width: 100%;
-      text-align: center; }
+      width: 100%; }
       main aside .imagenHome img {
         width: 220px;
-        height: 220px;
-        margin-left: none;
-        margin-top: none; }
+        height: 220px; }
     main section {
-      grid-area: section;
-      width: 100%;
-      text-align: center; }
+      width: 100%; }
       main section #texto {
-        color: white;
         font-size: 1rem;
-        margin-inline: 20px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        margin-inline: 20px; }
   main .servicio {
-    display: inline-block;
-    width: 100%; }
+    display: block; }
     main .servicio section {
-      width: 100%;
-      text-align: center;
-      margin-top: 40px; }
-      main .servicio section img {
-        width: 250px;
-        height: 250px;
-        border-radius: 250px;
-        border: 5px solid #a7a1a1; }
-      main .servicio section p {
-        color: white;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 180%;
-        font-size: 1.1rem;
-        margin-inline: 35px; }
+      width: 100%; }
   main {
     height: 100%; }
     main .fotos {
       flex-direction: column;
       object-fit: cover;
-      height: auto; }
+      height: auto;
+      margin-top: 120px;
+      margin-left: 120px; }
       main .fotos img {
         width: 80px;
         height: 80PX;
-        flex-grow: 1;
         margin-top: -35px; }
       main .fotos img:hover {
-        width: 400px;
         height: 400px; }
   main {
-    display: inline-block;
+    display: block;
     width: 100%; }
+    main .contact_form {
+      width: 500px; }
+      main .contact_form .formulario p input {
+        width: 430px; }
+      main .contact_form .formulario p textarea {
+        width: 430px;
+        height: 100px; }
     main .mapa {
       width: 100%;
       height: auto;
-      background-color: black;
-      text-align: center; }
+      background-color: black; }
       main .mapa img {
-        width: 200px;
-        height: 200px;
-        margin: 30px;
-        border: 2px solid #4b4545;
-        border-radius: 350px; }
-      main .mapa p {
-        font-size: 1rem;
-        color: white; }
-    main .contact_form {
-      width: 350px; }
-      main .contact_form .formulario p input {
-        background-color: #fbfbfb;
-        width: 270px;
-        height: 40px; }
-      main .contact_form .formulario p textarea {
-        background-color: #fbfbfb;
-        width: 270px;
-        height: 100px; }
-      main .contact_form .formulario button {
-        width: 100px; } }
+        margin: 30px; } }
 
 @media (min-width: 320px) and (max-width: 500px) {
   main {
-    display: inline-block; }
+    display: block; }
     main aside {
-      grid-area: aside;
-      width: 100%;
-      text-align: center; }
+      width: 100%; }
       main aside .imagenHome img {
         width: 220px;
-        height: 220px;
-        margin-left: none;
-        margin-top: none; }
+        height: 220px; }
     main section {
-      grid-area: section;
-      width: 100%;
-      text-align: center; }
+      width: 100%; }
       main section #texto {
-        color: white;
         font-size: 1rem;
-        margin-inline: 20px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        margin-inline: 20px; }
   main .servicio {
-    display: inline-block;
-    width: 100%; }
+    display: block; }
     main .servicio section {
-      width: 100%;
-      text-align: center;
-      margin-top: 40px; }
-      main .servicio section img {
-        width: 200px;
-        height: 200px;
-        border-radius: 200px;
-        border: 5px solid #a7a1a1; }
-      main .servicio section p {
-        color: white;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 180%;
-        font-size: 1rem;
-        padding: 10px;
-        margin-inline: 35px; }
+      width: 100%; }
+  main .contenedor {
+    margin-top: 90px; }
   main {
     height: 100%; }
     main .fotos {
       flex-direction: column;
       object-fit: cover;
-      height: auto; }
+      height: auto;
+      margin-top: 120px;
+      margin-left: 50px; }
       main .fotos img {
-        width: 50px;
-        height: 50PX;
-        flex-grow: 1;
-        margin-top: -25px; }
+        width: 80px;
+        height: 80PX;
+        margin-top: -35px; }
       main .fotos img:hover {
-        width: 260px;
-        height: 260px; }
+        width: 300px;
+        height: 300px; }
   main {
-    display: inline-block;
+    display: block;
     width: 100%; }
+    main .contact_form {
+      width: 335px; }
+      main .contact_form .formulario p input {
+        width: 270px; }
+      main .contact_form .formulario p textarea {
+        width: 270px;
+        height: 100px; }
     main .mapa {
       width: 100%;
       height: auto;
-      background-color: black;
-      text-align: center; }
+      background-color: black; }
       main .mapa img {
-        width: 200px;
-        height: 200px;
-        margin: 30px;
-        border: 2px solid #4b4545;
-        border-radius: 350px; }
-      main .mapa p {
-        font-size: 1rem;
-        color: white; }
-    main .contact_form {
-      width: 350px; }
-      main .contact_form .formulario p input {
-        background-color: #fbfbfb;
-        width: 270px;
-        height: 40px; }
-      main .contact_form .formulario p textarea {
-        background-color: #fbfbfb;
-        width: 270px;
-        height: 100px; }
-      main .contact_form .formulario button {
-        width: 100px; } }
+        margin: 30px; } }

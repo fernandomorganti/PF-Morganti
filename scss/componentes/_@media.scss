@@ -1,231 +1,143 @@
 @media (min-width: 700px) and (max-width: 1024px){
     main{
-        display: inline-block;
+        display: block;
         aside {
-            grid-area: aside;
             width: 100%;
-            text-align: center;
             .imagenHome {
                 img {
                     width: 220px;
                     height:220px;
-                    margin-left: none;
-                    margin-top: none;
-                    
                 }
             }
         }
         section {
-            grid-area: section;
             width: 100%;
-            text-align: center;
             #texto {
-                color: white;
                 font-size: 1rem;
                 margin-inline: 20px;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
         }
     }
     main .servicio {
-        display: inline-block;
-        width: 100%;
+        display: block;
         section {
-          width: 100%;
-          text-align: center;
-          margin-top: 40px;
-          img {
-            width: 250px;
-            height: 250px;
-            border-radius: 250px;
-            border: 5px solid #a7a1a1;
-        }
-          p {
-            color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 180%;
-            font-size: 1.1rem;
-            margin-inline: 35px;
+            width: 100%;
         }
     }
-}
-main{
-    height: 100%;
 
+    main{
+    height: 100%;
     .fotos {
         flex-direction: column;
         object-fit: cover;
         height: auto;
+        margin-top: 120px;
+        margin-left: 120px;
         img{
             width: 80px;
             height: 80PX;
-            flex-grow: 1;
             margin-top: -35px;
-            
         }
         img:hover {
-            width: 400px;
             height: 400px;
         }
     }
 }
 main{
-    display: inline-block;
+    display: block;
     width: 100%;
+    .contact_form {
+        width: 500px;
+        .formulario p{
+            input{
+                width: 430px; 
+            }
+            textarea{
+                width: 430px; 
+                height: 100px; 
+            }
+        }
+    }
     .mapa {
         width: 100%;
         height: auto;
         background-color: black;
-        text-align: center;
         img{
-          width: 200px;
-          height: 200px;
           margin: 30px;
-          border: 2px solid #4b4545;
-          border-radius: 350px;
-        }
-        p{
-          font-size: 1rem;
-          color: white;
         }
     }
+}
+}
+@media (min-width: 320px) and (max-width: 500px){
+    main{
+        display: block;
+        aside {
+            width: 100%;
+            .imagenHome {
+                img {
+                    width: 220px;
+                    height:220px;
+                }
+            }
+        }
+        section {
+            width: 100%;
+            #texto {
+                font-size: 1rem;
+                margin-inline: 20px;
+            }
+        }
+    }
+    main .servicio {
+        display: block;
+        section {
+            width: 100%;
+        }
+    }
+    main .contenedor{
+        margin-top: 90px;
+    }
+    main{
+    height: 100%;
+    .fotos {
+        flex-direction: column;
+        object-fit: cover;
+        height: auto;
+        margin-top: 120px;
+        margin-left: 50px;
+        img{
+            width: 80px;
+            height: 80PX;
+            margin-top: -35px;
+        }
+        img:hover {
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+main{
+    display: block;
+    width: 100%;
     .contact_form {
-        width: 350px;
+        width: 335px;
         .formulario p{
             input{
-                background-color: #fbfbfb; 
                 width: 270px; 
-                height: 40px; 
-
-              }
-              textarea{
-                background-color: #fbfbfb; 
+            }
+            textarea{
                 width: 270px; 
                 height: 100px; 
             }
         }
-        .formulario button{	
-            width: 100px;   
-
-        }
-    
     }
-}
-
-}
-@media (min-width: 320px) and (max-width: 500px){
-        main{
-            display: inline-block;
-            aside {
-                grid-area: aside;
-                width: 100%;
-                text-align: center;
-                .imagenHome {
-                    img {
-                        width: 220px;
-                        height:220px;
-                        margin-left: none;
-                        margin-top: none;
-                        
-                    }
-                }
-            }
-            section {
-                grid-area: section;
-                width: 100%;
-                text-align: center;
-                #texto {
-                    color: white;
-                    font-size: 1rem;
-                    margin-inline: 20px;
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                }
-            }
-        }
-        main .servicio {
-            display: inline-block;
-            width: 100%;
-            section {
-              width: 100%;
-              text-align: center;
-              margin-top: 40px;
-              img {
-                width: 200px;
-                height: 200px;
-                border-radius: 200px;
-                border: 5px solid #a7a1a1;
-            }
-              p {
-                color: white;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                line-height: 180%;
-                font-size: 1rem;
-                padding: 10px;
-                margin-inline: 35px;
-            }
-        }
-    }
-    main{
-        height: 100%;
-
-        .fotos {
-            flex-direction: column;
-            object-fit: cover;
-            height: auto;
-            img{
-                width: 50px;
-                height: 50PX;
-                flex-grow: 1;
-                margin-top: -25px;
-                
-            }
-            img:hover {
-                width: 260px;
-                height: 260px;
-            }
-        }
-    }
-    main{
-        display: inline-block;
+    .mapa {
         width: 100%;
-        .mapa {
-            width: 100%;
-            height: auto;
-            background-color: black;
-            text-align: center;
-            img{
-              width: 200px;
-              height: 200px;
-              margin: 30px;
-              border: 2px solid #4b4545;
-              border-radius: 350px;
-            }
-            p{
-              font-size: 1rem;
-              color: white;
-            }
-        }
-        .contact_form {
-            width: 350px;
-            .formulario p{
-                input{
-                    background-color: #fbfbfb; 
-                    width: 270px; 
-                    height: 40px; 
-
-                  }
-                  textarea{
-                    background-color: #fbfbfb; 
-                    width: 270px; 
-                    height: 100px; 
-                }
-            }
-            .formulario button{	
-                width: 100px;   
-
-            }
-        
+        height: auto;
+        background-color: black;
+        img{
+          margin: 30px;
         }
     }
-
+}
 }

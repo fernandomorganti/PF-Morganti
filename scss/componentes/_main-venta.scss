@@ -4,6 +4,17 @@ main {
     height:auto;
     background-color: black;
     text-align: center;
+    .ventas{
+        width: 100%;
+        position: absolute;
+        H3{
+          font-family: 'Times New Roman', Times, serif;
+          color: gray;
+          margin-top: 30px;
+          font-size: 2rem;
+          width: 100%;
+        }
+    }
     .contenedor{
         max-width: 1200px;
         padding: 10px;
@@ -12,6 +23,7 @@ main {
         justify-content: space-between;
         /* oculto lo que queda fuera del .contenedor */
         contain: paint;
+        margin-top: 60px;
         .contenedor-items{
             margin-top: 30px;
             display: grid;

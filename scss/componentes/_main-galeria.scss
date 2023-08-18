@@ -1,14 +1,24 @@
 main{
     grid-area: main;
-    justify-content: center;
+    text-align: center;
     height: auto;
+    display: block;
+    H4{
+        font-family: 'Times New Roman', Times, serif;
+        color: gray;
+        margin-top: 20px;
+        font-size: 2rem;
+        width: 100%;
+        position: absolute;
+    }
     .fotos {
+        width: 100%;
         display: flex;
         width: 450px;
         height: 400px;
-        justify-content: center;
         margin: 50px;
-        object-fit: cover;
+        margin-top: 80px;
+        margin-left: 120px;
         img{
             width: 50px;
             flex-grow: 1;

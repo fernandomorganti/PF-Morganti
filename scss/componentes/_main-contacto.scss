@@ -1,7 +1,7 @@
 main {
   grid-area: main;
   display: flex;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   .contact_form {
     width: 600px; 
@@ -103,7 +103,7 @@ main {
       height: 200px;
       margin: 50px;
       border: 2px solid #4b4545;
-      border-radius: 350px;
+      border-radius: 200px;
     }
     p{
       font-size: 1rem;
