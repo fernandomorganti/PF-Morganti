@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /pages/respuesta.html
+Disallow: /error-404/
+disallow: /pages/contacto.html
+Allow: /
+Sitemap: http://lasergraf.com.ar/sitemap.xml
