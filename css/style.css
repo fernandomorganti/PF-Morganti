@@ -14,13 +14,18 @@
 
 header {
   grid-area: header;
-  background: black;
-  background: linear-gradient(90deg, black 0%, #813737 13%, #424141 29%, black 50%, #424141 69%, #813737 87%, black 100%);
-  max-width: 100%;
-  height: auto;
+  background: #0d0d0e;
+  background: linear-gradient(93deg, #0d0d0e 0%, #2d1414 20%, #57040a 50%, #2d1414 80%, rgba(24, 24, 24, 0.863183) 100%);
+  width: 100%;
+  height: 120px;
   justify-content: center; }
   header #logo {
-    text-align: center; }
+    text-align: center;
+    margin-top: 10px; }
+    header #logo img {
+      width: 100px;
+      border-radius: 100px;
+      border: 3px solid #444444; }
 
 nav {
   grid-area: nav;
@@ -514,6 +519,16 @@ footer {
         margin: 30px; } }
 
 @media (min-width: 320px) and (max-width: 500px) {
+  header {
+    height: 105px;
+    justify-content: center;
+    background: #0d0d0e;
+    background: linear-gradient(93deg, #0d0d0e 0%, #2d1414 20%, #57040a 50%, #2d1414 80%, rgba(24, 24, 24, 0.863183) 100%); }
+    header #logo {
+      text-align: center;
+      margin-top: 15px; }
+      header #logo img {
+        width: 80px; }
   main {
     display: block; }
     main aside {
